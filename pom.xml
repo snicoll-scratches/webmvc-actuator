@@ -9,7 +9,7 @@
 	<packaging>jar</packaging>
 
 	<name>webmvc-actuator</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Spring Boot 2 Actuator using Spring Mvc</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -46,6 +46,14 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>build-info</id>
+						<goals>
+							<goal>build-info</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
